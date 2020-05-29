@@ -1,0 +1,215 @@
+.fond_accueil /* fond de la page d'acceuil */
+{
+	background: rgb(238,174,202);
+	background: 
+		url("hamster.png") fixed no-repeat left bottom, 
+		radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.fond_hp /* fond page 4 (harry potter) */
+{
+	background : url("background_magic.jpg") fixed no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+h1 /* Titre de niveau 1 */
+{
+	color : black; /*couleur*/
+	font-size: xx-large; /*taille*/
+	font-family: Arial, serif; /*police*/
+	font-style: normal; /*italique*/
+	font-weight: bold; /*gras*/
+	text-decoration: blink; /*soulignement et autres décorations*/
+	text-align: left; /*alignement*/
+}
+
+.titre_accueil /* titre de la page d'accueil */
+{
+	text-align: center; 
+}
+
+.titre_dico /* titre de la page 2 (dico) */
+{
+	color : black; 				
+	font-size: xx-large; 		
+	font-family: Arial, serif; 	
+	font-style: normal; 		
+	font-weight: bold; 			
+	text-decoration: underline;	
+	text-align: left; 
+}
+
+.titre_image /* titre de la page 3 (image) */
+{
+	color : black; 				
+	font-size: xx-large; 		
+	font-family: Arial, serif; 	
+	font-style: normal; 		
+	font-weight: bold; 			
+	text-decoration: none;	
+	text-align: center;	
+	border: groove rgb(224, 179, 255);
+}
+
+.titre_hp /* titre de la page 4 (harry potter) */
+{
+	color : white; 				
+	font-size: xx-large; 		
+	font-family: URW Chancery L; 	
+	font-style: oblique; 		
+	font-weight: bold; 			
+	text-decoration: none;	
+	text-align: center;
+	text-shadow: 5px 5px 5px grey;
+}
+
+h2 /* Titre de niveau 2 */
+{
+	color : black;
+	font-size: x-large;
+	font-family: Arial, serif;
+}
+
+.sous_titre_hp /* sous-titre dans l'article harry potter */
+{
+	font-size: large;
+}
+
+nav /* menu */
+{
+	float: left;
+	border: solid 1px black;
+	width: 150px;
+	background: rgba(255, 255, 204, 1);
+	border-radius: 10px;
+	vertical-align: top;
+}
+
+p /* paragraphes */
+{
+	color : black;
+}
+
+#presentation /* blocs de présentation */
+{
+	display : flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.element /* éléments de la présentation */
+{
+
+}
+
+.welcome /* phrase de bienvenue */
+{
+	color: black;
+	text-shadow: 3px 3px 3px white;
+	text-align: center;
+}
+
+.description /* aside accueil*/
+{
+	float: right;
+	border : 1px solid black;
+	width: 150px;
+	text-align: left;
+	padding: 12px;
+	background: rgba(255, 204, 153, 1);
+}
+
+.definitions /* liste des définitions de la page 2 */
+{
+	background-color: rgb(242, 242, 242);
+	border: solid rgb(204, 0, 0);
+	border-radius: 10px;
+	box-shadow: 5px 5px 3px black;
+	width: 200px
+}
+
+.page /* textes sur les indications de page à la fin */
+{
+	color: rgb(115, 115, 115); 
+	font-size: small;
+	text-align: center;
+}
+
+.page a /* liens dans les textes sur les pages */
+{
+	color: rgb(102, 153, 255);
+}
+
+.image_flottante /* image flottante */
+{
+	float : left; 
+}
+
+.dessous_flottant /* texte en-dessous d'un flottant */
+{
+	clear: both;
+}
+
+.article_hp /* article sur harry potter */
+{
+	text-align: justify;
+	border : solid 1px black;
+	padding: 20px;
+	/*margin: 10px 500px 10px 500px;*/
+	margin: 0 auto;
+	width: 50%;
+	background-color: rgba(255, 255, 255, 0.85);
+}
+
+.sources /* texte indiquant les sources */
+{
+	color: grey;
+	font-size: x-small;
+	font-style: italic; 
+	text-align: right; 
+}
+
+a /* liens */
+{
+	color : blue;
+	text-decoration: none;
+}
+
+a:hover /* survol des liens */
+{
+	color : blue;
+	text-decoration: underline;
+}
+
+a:active /* liens au moment du clique */
+{
+	color : red;
+	text-decoration: underline;
+}
+
+a:visited /* quand le lien a déjà été visité */
+{
+	text-decoration: underline;
+}
+
+em /* les mots un peu importants */
+{
+	font-style: italic;
+}
+
+strong /* les mots importants */
+{
+	font-weight: bold;
+}
+
+mark /* les marques */
+{
+	background-color: rgba(255, 255, 0, 0.8); 
+} 
+
+.center /* centrer un texte */
+{
+	text-align: center; 
+}
