@@ -1,9 +1,9 @@
 .fond_accueil /* fond de la page d'acceuil */
 {
-	background: rgb(238,174,202);
 	background: 
 		url("hamster.png") fixed no-repeat left bottom, 
-		linear-gradient(0deg, #e2afff 0%, #ffcbf2 100%);
+		linear-gradient(0deg, #e2afff 0%, #ffcbf2 100%) no-repeat fixed;
+	background-position: auto, cover;
 }
 
 .fond_hp /* fond page 4 (harry potter) */
