@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<title>Shoupie desu</title>
+		<meta name="viewport" content="width=device-width" />
+		<title>Accueil</title>
 	</head>
 
 	<body class="fond_accueil">
@@ -13,22 +14,22 @@
 
 		<section>
 			<p class="welcome">
-				Je suis <strong>Shoupie</strong>, <em>yôkaso</em> !<br/>
+				Je suis <strong>Yuni</strong>, <em>yôkaso</em> !<br/>
 			</p>
 		</section>
 
 		<nav>
 			<ul>Menu :
-				<li><a href="page2.html">Dictionnaire</a></li>
-				<li><a href="page3.html">Images</a></li>
+				<li><a href="page2.html">Index</a></li>
+				<li><a href="page3.html">Animés</a></li>
 				<li><a href="page4.html">Harry Potter</a></li>
 			</ul>
 		</nav>
 
 		<aside class="description">
-				Nom : Shoupie<br />
-				Prénom : Yuni<br />
-				Date de Naissance : NY/YY/AAAA<br />
+			Nom : ^w^<br />
+			Prénom : Yuni<br />
+			Date de Naissance : NY/YY/AAAA<br />
 		</aside>
 		
 		<section id="presentation">
@@ -38,6 +39,7 @@
 				<li>dormir</li>
 				<li>lire</li>
 			</ul>
+
 			<ol class="element">Voici les étapes de ma journée : 
 				<li>me lever</li>
 				<li>me brosser les dents</li>
@@ -45,6 +47,164 @@
 				<li>mettre mes soins</li>
 				<li>aller aux toilettes</li>
 			</ol>
+
+			<div class="element">
+				<caption>Sortie des mangas</caption>
+				<table>
+					<thead>
+						<tr>
+							<th>Nom</th>
+							<th>Tome</th>
+							<th>Date</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td rowspan="2">Darwin's Game</td>
+							<td>19</td>
+							<td>28/05/2020</td>
+						</tr>
+						<tr>
+							<td>20</td>
+							<td>02/07/2020</td>
+						</tr>
+						<tr>
+							<td>The Promised Neverland</td>
+							<td>13</td>
+							<td>27/05/2020</td>
+						</tr>
+						<tr>
+							<td>ReLIFE</td>
+							<td>14</td>
+							<td>18/06/2020</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="element">
+				<form method="post" action="traitement.php">
+					<p>
+						Cochez votre animé préféré<br />
+						
+						<input type="radio" name="mha" id="mha" />
+						<label for="nom">My Hero Academia</label> 
+						<br />
+
+						<input type="radio" name="kimetsu" id="kimetsu" />
+						<label for="nom">Kimetsu no Yaiba</label> 
+						<br />
+
+						<input type="radio" name="hxh" id="hxh" />
+						<label for="nom">Hunter x Hunter</label> 
+						<br />
+
+						<input type="radio" name="one_piece" id="one_piece" />
+						<label for="nom">One Piece</label> 
+						<br />
+
+						<input type="radio" name="naruto" id="naruto" />
+						<label for="nom">Naruto</label> 
+						<br />
+
+						<input type="submit" name="envoyer" />
+					</p>
+				</form>
+			</div>
+
+			<div class="element">
+				<form method="post" action="traitement.php">
+					<p>
+						Cochez les animés que vous avez fini<br />
+
+						<input type="checkbox" name="code_geass" id="code_geass" />
+						<label for="nom">Code Geass</label> 
+						<br />
+						
+						<input type="checkbox" name="ngnl" id="ngnl" />
+						<label for="nom">No Game No Life</label> 
+						<br />
+
+						<input type="checkbox" name="knb" id="knb" />
+						<label for="nom">Kuroko no Basket</label> 
+						<br />
+
+						<input type="checkbox" name="log_horizon" id="log_horizon" />
+						<label for="nom">Log Horizon</label> 
+						<br />
+
+						<input type="checkbox" name="sagrada" id="sagrada" />
+						<label for="nom">Sakurada Reset</label> 
+						<br />
+
+						<input type="submit" name="envoyer" />
+					</p>
+				</form>
+			</div>
+
+			<div class="element">
+				<form method="post" action="traitement.php">
+					<p>
+						Formulaire de visite<br />
+
+						<fieldset>
+							<legend>Vos coordonnés</legend>
+
+							<label for="nom">Votre nom</label> : 
+							<input type="text" name="nom" id="nom" size="15" required />
+							<br />
+
+							<label for="prenom">Votre prenom</label> : 
+							<input type="text" name="prenom" id="prenom" size="15" required />
+							<br />
+
+							<label for="email">Votre email</label> : <br />
+							<input type="email" name="email" id="email" size="30" required />
+							<br />
+
+							<label for="tel">Votre numéro de téléphone</label> : <br />
+							<input type="tel" name="tel" id="tel" size="12" />
+							<br /> 
+
+							<label for="pays">Dans quel pays habitez-vous ?</label><br />
+					        <select name="pays" id="pays" >
+					           <optgroup label="Europe">
+					               <option value="france">France</option>
+					               <option value="espagne">Espagne</option>
+					               <option value="italie">Italie</option>
+					               <option value="royaume-uni">Royaume-Uni</option>
+					           </optgroup>
+					           <optgroup label="Amérique">
+					               <option value="canada">Canada</option>
+					               <option value="etats-unis">Etats-Unis</option>
+					           </optgroup>
+					           <optgroup label="Asie">
+					               <option value="chine">Chine</option>
+					               <option value="japon">Japon</option>
+					           </optgroup>
+					        </select>
+					        <br />
+				        </fieldset>
+
+				        <fieldset>
+				        	<legend>Votre avis</legend>
+
+							<label for="note">Votre note (de 0 à 10)</label> :<br />
+							<input type="number" name="note" id="note" size="10" min="0" max="10" step="0.5" required />
+							<br />
+
+							<label for="suggestion">Suggestion</label> :<br />
+							<textarea name="suggestion" id="suggestion" rows="5" cols="30">
+								Avez-vous une suggestion pour améliorer ce site ? 
+							</textarea>
+							<br />
+						</fieldset>
+
+						<input type="submit" name="envoyer" />
+					</p>
+				</form>
+			</div>
 		</section>
 
 		<footer>

@@ -3,7 +3,7 @@
 	background: rgb(238,174,202);
 	background: 
 		url("hamster.png") fixed no-repeat left bottom, 
-		radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+		linear-gradient(0deg, #e2afff 0%, #ffcbf2 100%);
 }
 
 .fond_hp /* fond page 4 (harry potter) */
@@ -81,7 +81,7 @@ nav /* menu */
 	float: left;
 	border: solid 1px black;
 	width: 150px;
-	background: rgba(255, 255, 204, 1);
+	background: #f1e6ff;
 	border-radius: 10px;
 	vertical-align: top;
 }
@@ -91,17 +91,26 @@ p /* paragraphes */
 	color : black;
 }
 
+.son /* réglage son */ 
+{
+	background-position: top left;
+}
+
 #presentation /* blocs de présentation */
 {
 	display : flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
+	border : 1px solid black;
+	margin-left: 20%;
+	margin-right: 20%;
+	background-color: rgba(230, 244, 255, 0.8);
 }
 
 .element /* éléments de la présentation */
 {
-
+	padding: 20px;
 }
 
 .welcome /* phrase de bienvenue */
@@ -118,7 +127,8 @@ p /* paragraphes */
 	width: 150px;
 	text-align: left;
 	padding: 12px;
-	background: rgba(255, 204, 153, 1);
+	background: #ffe1ff;
+	vertical-align: top;
 }
 
 .definitions /* liste des définitions de la page 2 */
@@ -132,14 +142,16 @@ p /* paragraphes */
 
 .page /* textes sur les indications de page à la fin */
 {
-	color: rgb(115, 115, 115); 
+	color: black; 
+	text-shadow: 1px 1px 2px white;
 	font-size: small;
 	text-align: center;
 }
 
 .page a /* liens dans les textes sur les pages */
 {
-	color: rgb(102, 153, 255);
+	color: #c8e7ff;
+	text-shadow: none;
 }
 
 .image_flottante /* image flottante */
@@ -169,6 +181,22 @@ p /* paragraphes */
 	font-size: x-small;
 	font-style: italic; 
 	text-align: right; 
+}
+
+table /* tableaux */
+{
+	border-collapse: collapse;
+	background-color: white;
+}
+
+td, th /* case d'un tableau */
+{
+	border: 1px solid black;
+}
+
+caption /* titre du tableau */
+{
+	caption-side: top;
 }
 
 a /* liens */
@@ -212,4 +240,25 @@ mark /* les marques */
 .center /* centrer un texte */
 {
 	text-align: center; 
+}
+
+
+@media all and (max-device-width: 480px) /* les périphériques mobiles */
+{
+	#presentation /* blocs de présentation */
+	{
+		display : flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		border : 1px solid black;
+		margin-left: 0%;
+		margin-right: 0%;
+		margin-top: 40%;
+	}
+
+	video 
+	{
+		width: 100%;
+	}
 }
